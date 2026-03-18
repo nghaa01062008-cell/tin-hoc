@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Tết Gia Đình</title>
+
+<style>
+
+body{
+background:#8B0000;
+font-family:"Times New Roman", serif;
+color:gold;
+margin:40px;
+}
+
+/* tiêu đề */
+.title{
+text-align:center;
+font-size:50px;
+text-shadow:0 0 10px gold;
+}
+
+/* đèn lồng */
+.lantern{
+position:fixed;
+font-size:40px;
+top:20px;
+}
+
+.left{
+left:20px;
+}
+
+.right{
+right:20px;
+}
+
+/* khối ảnh + thơ */
+.block{
+display:flex;
+align-items:center;
+margin:50px 0;
+}
+
+.reverse{
+flex-direction:row-reverse;
+}
+
+/* ảnh */
+.block img{
+width:220px;
+border-radius:10px;
+box-shadow:0 0 15px gold;
+}
+
+/* khung thơ */
+.text{
+margin:0 30px;
+font-size:20px;
+line-height:1.6;
+background:#a30000;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gold;
+}
+
+/* hoa rơi */
+.flower{
+position:fixed;
+top:-50px;
+font-size:25px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="lantern left">🏮</div>
+<div class="lantern right">🏮</div>
+
+<h1 class="title">🌸 TẾT HỌC ĐƯỜNG 🌸</h1>
+
+<div class="block">
+<img src="anh4.jpg">
+<div class="text">
+<b>Tết sum vầy</b><br>
+Xuân về hoa nở khắp nơi<br>
+Gia đình sum họp rộn cười đón xuân<br>
+Bánh chưng xanh thắm nghĩa ân<br>
+Tình thân ấm áp muôn phần yêu thương.
+</div>
+</div>
+
+<div class="block reverse">
+<img src="anh5.jpg">
+<div class="text">
+<b>Tết yêu thương</b><br>
+Tết về con cháu quây quần<br>
+Bên nồi bánh chưng thêm gần tình thân<br>
+Ông bà kể chuyện mùa xuân<br>
+Cả nhà rộn rã muôn phần vui tươi.
+</div>
+</div>
+
+<div class="block">
+<img src="anh6.jpg">
+<div class="text">
+<b>Tết ấm áp</b><br>
+Xuân sang nắng ấm hiên nhà<br>
+Gia đình đoàn tụ chan hòa yêu thương<br>
+Chúc nhau năm mới an khang<br>
+Niềm vui hạnh phúc rộn vang mọi nhà.
+</div>
+</div>
+
+<!-- hoa rơi -->
+<div class="flower" style="left:10%;animation-duration:7s;">🌸</div>
+<div class="flower" style="left:30%;animation-duration:9s;">🌼</div>
+<div class="flower" style="left:50%;animation-duration:8s;">🌸</div>
+<div class="flower" style="left:70%;animation-duration:10s;">🌼</div>
+<div class="flower" style="left:90%;animation-duration:6s;">🌸</div>
+
+</body>
+</html>
